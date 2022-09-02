@@ -1,0 +1,3 @@
+C:/Users/Calvin/Downloads/GAMES101-Homework-/Assignment0/build/CMakeFiles/Transformation.dir
+C:/Users/Calvin/Downloads/GAMES101-Homework-/Assignment0/build/CMakeFiles/edit_cache.dir
+C:/Users/Calvin/Downloads/GAMES101-Homework-/Assignment0/build/CMakeFiles/rebuild_cache.dir
