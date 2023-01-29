@@ -7,44 +7,61 @@ Homework of GAMES101: Introduction to Computer Graphics, instructed by Professor
 本地C++环境搭建(OpenCV & Eigen)
 
 ## Homework1 旋转与投影
-
-![截屏2022-09-03 01.36.20](/imgs/%E6%88%AA%E5%B1%8F2022-09-03%2001.36.20.png)
+<div align="center">
+    <img src="./imgs/%E6%88%AA%E5%B1%8F2022-09-03%2001.36.20.png" width="400"/>
+</div>
 
 ## Homework2 Triangles and Z-buffering
 
 ### Normal Version
+<div align="center">
+    <img src="./imgs/%E6%88%AA%E5%B1%8F2022-09-02%2022.00.23.png" width="400"/>
+</div>
 
- ![截屏2022-09-02 22.00.23](/imgs/%E6%88%AA%E5%B1%8F2022-09-02%2022.00.23.png)
 
 ### MSAA Version
 
 使用超采样来实现反走样，对边界的处进行优化，但在三角形交界处存在黑边
 
-![截屏2022-09-03 00.17.19](/imgs/%E6%88%AA%E5%B1%8F2022-09-03%2000.17.19.png)
+<div align="center">
+    <img src="./imgs/%E6%88%AA%E5%B1%8F2022-09-03%2000.17.19.png" width="400"/>
+</div>
 
 ### MSAA Version with no black-edge
 
 去除交界处的黑边
-
-![截屏2022-09-03 00.56.50](/imgs/%E6%88%AA%E5%B1%8F2022-09-03%2000.56.50.png)
+<div align="center">
+    <img src="./imgs/%E6%88%AA%E5%B1%8F2022-09-03%2000.17.19.png" width="400"/>
+</div>
 
 ### 对比图
-
-![截屏2022-09-03 01.55.25](/imgs/%E6%88%AA%E5%B1%8F2022-09-03%2001.55.25.png)
+<div align="center">
+    <img src="./imgs/%E6%88%AA%E5%B1%8F2022-09-03%2001.55.25.png" width="400"/>
+</div
 
 ## Homework3 Shading
 
 ### Normal Shader
-![normal_shader](/imgs/output_normal.png)
+<div align="center">
+    <img src="./imgs/output_normal.png" width="400"/>
+</div>
 
 ### Blinn-Phong Shader
-![blinn_phong_shader](/imgs/output_phong.png)
+<div align="center">
+    <img src="./imgs/output_phong.png" width="400"/>
+</div>
 
 ### Texture Shader
-![texture_shader](/imgs/output_texture.png)
+<div align="center">
+    <img src="./imgs/output_texture.png" width="400"/>
+</div>
 
 ### Bump Mapping Shader
-![bump_mapping_shader](/imgs/output_bump.png)
+<div align="center">
+    <img src="./imgs/output_bump.png" width="400"/>
+</div>
 
 ### Displacement Mapping Shader
-![displacement_mapping_shader](/imgs/output_displacement.png)
+<div align="center">
+    <img src="./imgs/output_displacement.png" width="400"/>
+</div>
