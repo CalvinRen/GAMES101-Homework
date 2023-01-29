@@ -4,9 +4,9 @@ Homework of GAMES101: Introduction to Computer Graphics, instructed by Professor
 
 ## Assignment0
 
-本地C++环境搭建(OpenCV & Eigen)
+Build up C++ Environment (OpenCV & Eigen)
 
-## Homework1 旋转与投影
+## Homework1 Rotation and Translation
 <div align="center">
     <img src="./imgs/%E6%88%AA%E5%B1%8F2022-09-03%2001.36.20.png" width="400"/>
 </div>
