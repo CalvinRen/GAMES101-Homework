@@ -21,7 +21,7 @@ Build up C++ Environment (OpenCV & Eigen)
 
 ### MSAA Version
 
-使用超采样来实现反走样，对边界的处进行优化，但在三角形交界处存在黑边
+Implement MSAA by using supersampling to achieve anti-aliasing, and optimize the boundary, but there is a black edge at the intersection of triangles
 
 <div align="center">
     <img src="./imgs/%E6%88%AA%E5%B1%8F2022-09-03%2000.17.19.png" width="400"/>
@@ -29,12 +29,13 @@ Build up C++ Environment (OpenCV & Eigen)
 
 ### MSAA Version with no black-edge
 
-去除交界处的黑边
+Remove the black edge at the intersection of triangles  
+
 <div align="center">
     <img src="./imgs/%E6%88%AA%E5%B1%8F2022-09-03%2000.17.19.png" width="400"/>
 </div>
 
-### 对比图
+### Comparison
 <div align="center">
     <img src="./imgs/%E6%88%AA%E5%B1%8F2022-09-03%2001.55.25.png" width="400"/>
 </div>
