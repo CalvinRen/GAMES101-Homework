@@ -37,7 +37,7 @@ Homework of GAMES101: Introduction to Computer Graphics, instructed by Professor
 ### 对比图
 <div align="center">
     <img src="./imgs/%E6%88%AA%E5%B1%8F2022-09-03%2001.55.25.png" width="400"/>
-</div
+</div>
 
 ## Homework3 Shading
 
@@ -66,7 +66,7 @@ Homework of GAMES101: Introduction to Computer Graphics, instructed by Professor
     <img src="./imgs/output_displacement.png" width="400"/>
 </div>
 
-## Bezier Curve
+## Homework4 Bezier Curve
 ### Naive Bezier Curves
 <div align="center">
     <img src="./imgs/naive_bezier.png" width="400"/>
