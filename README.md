@@ -86,3 +86,8 @@ Remove the black edge at the intersection of triangles
 <div align="center">
     <img src="./imgs/bezier_comp.png" width="600"/>
 </div>
+
+## Homework5 Ray Tracing and Triangle Intersection
+<div align="center">
+    <img src="./imgs/hw5.png" width="400"/>
+</div>
