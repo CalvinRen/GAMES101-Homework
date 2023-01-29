@@ -1,4 +1,0 @@
-"/Users/calvin/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=/Users/calvin/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/CLion.app/Contents/bin/ninja/mac/ninja" -G Ninja -S /Users/calvin/Github_Base/GAMES101-Homework/Homework1/Assignment1 -B /Users/calvin/Github_Base/GAMES101-Homework/Homework1/Assignment1/cmake-build-debug
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/calvin/Github_Base/GAMES101-Homework/Homework1/Assignment1/cmake-build-debug

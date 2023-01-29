@@ -65,3 +65,23 @@ Homework of GAMES101: Introduction to Computer Graphics, instructed by Professor
 <div align="center">
     <img src="./imgs/output_displacement.png" width="400"/>
 </div>
+
+## Bezier Curve
+### Naive Bezier Curves
+<div align="center">
+    <img src="./imgs/naive_bezier.png" width="400"/>
+</div>
+
+### Anti-Aliasing Bezier Curves
+<div align="center">
+    <img src="./imgs/anti-aliasing_bezier.png" width="400"/>
+</div>
+
+### Comparison
+<div align="center">
+    <img src="./imgs/bezier_comp_glob.png" width="600"/>
+</div>
+
+<div align="center">
+    <img src="./imgs/bezier_comp.png" width="600"/>
+</div>

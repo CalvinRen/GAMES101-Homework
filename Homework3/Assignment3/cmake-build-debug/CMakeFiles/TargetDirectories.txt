@@ -1,3 +1,0 @@
-/Users/calvin/Downloads/GAMES101_Homework_S2021/GAMES101_Homework3_S2021/Homework3/Assignment3/cmake-build-debug/CMakeFiles/Rasterizer.dir
-/Users/calvin/Downloads/GAMES101_Homework_S2021/GAMES101_Homework3_S2021/Homework3/Assignment3/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/calvin/Downloads/GAMES101_Homework_S2021/GAMES101_Homework3_S2021/Homework3/Assignment3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
