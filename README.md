@@ -6,12 +6,12 @@ Homework of GAMES101: Introduction to Computer Graphics, instructed by Professor
 
 Build up C++ Environment (OpenCV & Eigen)
 
-## Homework1 Rotation and Translation
+## HW1-Rotation and Translation
 <div align="center">
     <img src="./imgs/%E6%88%AA%E5%B1%8F2022-09-03%2001.36.20.png" width="400"/>
 </div>
 
-## Homework2 Triangles and Z-buffering
+## HW2-Triangles and Z-buffering
 
 ### Normal Version
 <div align="center">
@@ -40,7 +40,7 @@ Remove the black edge at the intersection of triangles
     <img src="./imgs/%E6%88%AA%E5%B1%8F2022-09-03%2001.55.25.png" width="400"/>
 </div>
 
-## Homework3 Shading
+## HW3-Shading
 
 ### Normal Shader
 <div align="center">
@@ -67,7 +67,7 @@ Remove the black edge at the intersection of triangles
     <img src="./imgs/output_displacement.png" width="400"/>
 </div>
 
-## Homework4 Bezier Curve
+## HW4-Bezier Curve
 ### Naive Bezier Curves
 <div align="center">
     <img src="./imgs/naive_bezier.png" width="400"/>
@@ -87,7 +87,12 @@ Remove the black edge at the intersection of triangles
     <img src="./imgs/bezier_comp.png" width="600"/>
 </div>
 
-## Homework5 Ray Tracing and Triangle Intersection
+## HW5-Ray Tracing and Triangle Intersection
 <div align="center">
     <img src="./imgs/hw5.png" width="400"/>
+</div>
+
+## HW6-Ray Bounding Box Intersection and BVH
+<div align="center">
+    <img src="./imgs/bunny.png" width="400"/>
 </div>
