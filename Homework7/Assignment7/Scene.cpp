@@ -105,7 +105,11 @@ Vector3f Scene::castRay(const Ray &ray, int depth) const
     // if ray r hit a non-emitting object
     Intersection inter_indir = intersect(ray_indir);
     if (inter_indir.happened && !inter_indir.m->hasEmission()) {
-        L_indir = castRay(ray_indir, depth + 1) * inter_p.m->eval(ray.direction, ray_indir.direction, N) * dotProduct(ray_indir.direction, N) / inter_p.m->pdf(ray.direction, ray_indir.direction, N) / RussianRoulette;
+        float pdf = inter_p.m->pdf(ray.direction, ray_indir.direction, N);
+        // remove white noise
+        if (pdf > EPSILON) {
+            L_indir = castRay(ray_indir, depth + 1) * inter_p.m->eval(ray.direction, ray_indir.direction, N) * dotProduct(ray_indir.direction, N) / pdf / RussianRoulette;
+        }
     }
 
     return L_dir + L_indir;
