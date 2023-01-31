@@ -98,7 +98,7 @@ Remove the black edge at the intersection of triangles
 </div>
 
 ## HW7-Path Tracing
-SPP = 16
+SPP = 16  
 Render Time = 48min
 <div align="center">
     <img src="./imgs/cornell_box.png" width="500"/>
