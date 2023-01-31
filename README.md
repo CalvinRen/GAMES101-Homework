@@ -1,4 +1,4 @@
-# GAMES101-Homework(Being Updated)
+# GAMES101-Homework
 
 Homework of GAMES101: Introduction to Computer Graphics, instructed by Professor Linqi Yan. 
 
