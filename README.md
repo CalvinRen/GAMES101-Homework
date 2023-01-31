@@ -7,6 +7,7 @@ Homework of GAMES101: Introduction to Computer Graphics, instructed by Professor
 Build up C++ Environment (OpenCV & Eigen)
 
 ## HW1-Rotation and Translation
+Rasterization of a triangle with rotation and translation. 
 <div align="center">
     <img src="./imgs/%E6%88%AA%E5%B1%8F2022-09-03%2001.36.20.png" width="400"/>
 </div>
@@ -48,32 +49,45 @@ Remove the black edge at the intersection of triangles
 </div>
 
 ### Blinn-Phong Shader
+Implemented Blinn-Phong Reflection model.  
+
+$$\begin{aligned} L &= L_{Ambient} + L_{Diffuse} + L_{Specular} \\
+&= k_a * I_a + k_d * (I/r^2) * max(0, n \cdot l) + k_s * (I/r^2) * max(0, n \cdot h)^{p} 
+\end{aligned}$$
+
 <div align="center">
     <img src="./imgs/output_phong.png" width="400"/>
 </div>
 
 ### Texture Shader
+Add Texture Mapping to the Blinn-Phong Shader.
 <div align="center">
     <img src="./imgs/output_texture.png" width="400"/>
 </div>
 
 ### Bump Mapping Shader
+Add Bump Mapping to the Blinn-Phong Shader.
 <div align="center">
     <img src="./imgs/output_bump.png" width="400"/>
 </div>
 
 ### Displacement Mapping Shader
+Add Displacement Mapping to the Blinn-Phong Shader.
 <div align="center">
     <img src="./imgs/output_displacement.png" width="400"/>
 </div>
 
 ## HW4-Bezier Curve
 ### Naive Bezier Curves
+Bernstein Form of Bezier Curve:  
+$$\textbf{b}^n(t) = \sum_{j=0}^{n}\textbf{b}_jB^n_j(t)$$
+In this implementation, we recursively compute the control points of the Bezier curve.
 <div align="center">
     <img src="./imgs/naive_bezier.png" width="400"/>
 </div>
 
 ### Anti-Aliasing Bezier Curves
+In order to achieve anti-aliasing, we use super sampling to sample the curve at a higher resolution.
 <div align="center">
     <img src="./imgs/anti-aliasing_bezier.png" width="400"/>
 </div>
@@ -88,11 +102,51 @@ Remove the black edge at the intersection of triangles
 </div>
 
 ## HW5-Ray Tracing and Triangle Intersection
+### Whitted-Style Ray Tracing. 
+$$Ray:\quad \textbf{r}(t)=\textbf{o}+t\textbf{d}, 0 \leq t < \infty$$
+$$Sphere: \quad \textbf{p}:(\textbf{p}-\textbf{c})^2-R^2 = 0$$
+When $(\textbf{o}+t\textbf{d}-\textbf{c})^2-R^2 = 0$, we have a solution for $t$:
+$$t = \frac{-b\pm \sqrt{b^2-4ac}}{2a} $$
+
+### Ray Intersection With Triangle
+Muller Trumbore Algorithm:
+$$\begin{aligned} \overrightarrow{E_1} &= \overrightarrow{P_1}  - \overrightarrow{P_0} \\
+\overrightarrow{E_2} &= \overrightarrow{P_2} - \overrightarrow{P_0} \\
+\overrightarrow{S} &= \textbf{O} - \overrightarrow{P_0} \\
+\overrightarrow{S_1} &= \textbf{D} \times \overrightarrow{E_2} \\
+\overrightarrow{S_2} &= \overrightarrow{S} \times \overrightarrow{E_1} \\ \\
+
+a &= \overrightarrow{S_1} \cdot \overrightarrow{E_1} \\
+f &= \frac{1}{a} \\\\
+t &= f * (\overrightarrow{S_2} \cdot \overrightarrow{E_2}) \\
+u &= f * (\overrightarrow{S_1} \cdot \overrightarrow{S}) \\
+v &= f * (\overrightarrow{S_2} \cdot \textbf{D}) \\
+\end{aligned}$$
+
+When `t > 0.0 && u > 0.0 && v > 0.0 && (1 - u - v) > 0.0`, we have a solution for $t$.
+
 <div align="center">
     <img src="./imgs/hw5.png" width="400"/>
 </div>
 
 ## HW6-Ray Bounding Box Intersection and BVH
+### Ray Bounding Box Intersection
+Slabs perpendicular method:
+$$\begin{aligned} \textbf{t}_{max} &= \frac{P_{max} - \textbf{O}}{\textbf{D}} \\
+\textbf{t}_{min} &= \frac{P_{min} - \textbf{O}}{\textbf{D}} \\
+\textbf{t}_{enter} &= max(\textbf{t}_{min}) \\
+\textbf{t}_{exit} &= min(\textbf{t}_{max}) \\
+\end{aligned}$$
+
+When $t_{enter} < t_{exit}\  \&\& \ t_{exit} \ge0 $, ray intersects with the bounding box.
+
+### BVH
+- Find bounding box
+- Recursively split set of objects in two subsets
+- Recompute the bounding box of the subsets
+- Stop when necessary
+- Store objects in each leaf node
+
 <div align="center">
     <img src="./imgs/bunny.png" width="400"/>
 </div>
