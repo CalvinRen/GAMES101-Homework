@@ -109,21 +109,27 @@ When $(\textbf{o}+t\textbf{d}-\textbf{c})^2-R^2 = 0$, we have a solution for $t$
 $$t = \frac{-b\pm \sqrt{b^2-4ac}}{2a} $$
 
 ### Ray Intersection With Triangle
-Muller Trumbore Algorithm:  
-$$
-\begin{align} \overrightarrow{E_1} &= \overrightarrow{P_1}  - \overrightarrow{P_0} \\\\
-    \overrightarrow{E_2} &= \overrightarrow{P_2} - \overrightarrow{P_0} \\\\
-    \overrightarrow{S} &= \textbf{O} - \overrightarrow{P_0} \\
-    \overrightarrow{S_1} &= \textbf{D} \times \overrightarrow{E_2} \\\\
-    \overrightarrow{S_2} &= \overrightarrow{S} \times \overrightarrow{E_1} \end{align}
-$$
+Muller Trumbore Algorithm: 
 
 $$
-\begin{align} a &= \overrightarrow{S_1} \cdot \overrightarrow{E_1} \\\\
-    f &= \frac{1}{a} \\\\
-    t &= f * (\overrightarrow{S_2} \cdot \overrightarrow{E_2}) \\\\
-    u &= f * (\overrightarrow{S_1} \cdot \overrightarrow{S}) \\\\
-    v &= f * (\overrightarrow{S_2} \cdot \textbf{D}) \end{align}
+\begin{aligned}
+\overrightarrow{E_1} &= \overrightarrow{P_1}  - \overrightarrow{P_0} \\
+\overrightarrow{E_2} &= \overrightarrow{P_2} - \overrightarrow{P_0} \\
+\overrightarrow{S} &= \textbf{O} - \overrightarrow{P_0} \\
+\overrightarrow{S_1} &= \textbf{D} \times \overrightarrow{E_2} \\
+\overrightarrow{S_2} &= \overrightarrow{S} \times \overrightarrow{E_1}
+\end{aligned}
+$$
+  
+  
+$$
+\begin{aligned} 
+a &= \overrightarrow{S_1} \cdot \overrightarrow{E_1} \\
+f &= \frac{1}{a} \\
+t &= f * (\overrightarrow{S_2} \cdot \overrightarrow{E_2}) \\
+u &= f * (\overrightarrow{S_1} \cdot \overrightarrow{S}) \\
+v &= f * (\overrightarrow{S_2} \cdot \textbf{D}) 
+\end{aligned}
 $$
 
 When `t > 0.0 && u > 0.0 && v > 0.0 && (1 - u - v) > 0.0`, we have a solution for $t$.
@@ -135,14 +141,17 @@ When `t > 0.0 && u > 0.0 && v > 0.0 && (1 - u - v) > 0.0`, we have a solution fo
 ## HW6-Ray Bounding Box Intersection and BVH
 ### Ray Bounding Box Intersection
 Slabs perpendicular method:  
+
 $$
-\begin{align} \textbf{t}_{max} &= \frac{P_{max} - \textbf{O}}{\textbf{D}} \\\\
-    \textbf{t}_{min} &= \frac{P_{min} - \textbf{O}}{\textbf{D}} \\\\
-    \textbf{t}_{enter} &= max(\textbf{t}_{min}) \\\\
-    \textbf{t}_{exit} &= min(\textbf{t}_{max}) \end{align}
+\begin{aligned}
+\textbf{t}_{max} &= \frac{P_{max} - \textbf{O}}{\textbf{D}} \\
+\textbf{t}_{min} &= \frac{P_{min} - \textbf{O}}{\textbf{D}} \\
+\textbf{t}_{enter} &= max(\textbf{t}_{min}) \\
+\textbf{t}_{exit} &= min(\textbf{t}_{max}) 
+\end{aligned}
 $$
 
-When $$t_{enter} < t_{exit}\  \&\& \ t_{exit} \ge0$$, ray intersects with the bounding box.
+When  $t_{enter} < t_{exit}\  \land \ t_{exit} \ge0$ , ray intersects with the bounding box.
 
 ### BVH
 - Find bounding box
