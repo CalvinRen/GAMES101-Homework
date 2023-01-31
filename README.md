@@ -96,3 +96,10 @@ Remove the black edge at the intersection of triangles
 <div align="center">
     <img src="./imgs/bunny.png" width="400"/>
 </div>
+
+## HW7-Path Tracing
+SPP = 16
+Render Time = 48min
+<div align="center">
+    <img src="./imgs/cornell_box.png" width="500"/>
+</div>
