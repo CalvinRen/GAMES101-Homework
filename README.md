@@ -109,7 +109,7 @@ When $(\textbf{o}+t\textbf{d}-\textbf{c})^2-R^2 = 0$, we have a solution for $t$
 $$t = \frac{-b\pm \sqrt{b^2-4ac}}{2a} $$
 
 ### Ray Intersection With Triangle
-Muller Trumbore Algorithm:
+Muller Trumbore Algorithm:  
 $$\begin{aligned} \overrightarrow{E_1} &= \overrightarrow{P_1}  - \overrightarrow{P_0} \\
 \overrightarrow{E_2} &= \overrightarrow{P_2} - \overrightarrow{P_0} \\
 \overrightarrow{S} &= \textbf{O} - \overrightarrow{P_0} \\
